@@ -13,8 +13,8 @@ const PokemonChallenge = () => {
   }, [status, dispatch]);
 
   return (
-    <div>
-      <h1>Lista de Pokémon</h1>
+    <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
+      <h2>Lista de Pokémon</h2>
       {status === 'loading' && <div>Cargando...</div>}
       {status === 'succeeded' && (
         <ul>
